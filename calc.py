@@ -9,6 +9,12 @@ import sys
 # -- CALCULATOR FUNCTIONS -------------------------------- #
 # -------------------------------------------------------- #
 
+# Exponent function
+# a --
+# b -- power
+def exp(a,b):
+    return a ** b
+
 # Add function
 # a -- addend
 # b -- augend
@@ -67,6 +73,8 @@ while (True):
             print "Product: ", mult(a, b)
         elif (op == "/"):
             print "Quotient: ", div(a, b)
+        elif (op == "**"):
+			print "Product: ", exp(a, b)
         else:
             print "Invalid operation..."
 
